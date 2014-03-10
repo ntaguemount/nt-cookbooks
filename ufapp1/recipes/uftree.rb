@@ -83,9 +83,16 @@ directory "/WEBS/data_tmp/md/log_services/services" do
   mode 0755
   action :create
 end
+
 directory "/WEBS/data_tmp/log_cron" do
   owner "www-data"
   group "www-data"
   mode 0755
   action :create
+end
+
+template "/WEBS/universalflower/http.json" do
+  mode 00644
+  source "http.erb"
+
 end
