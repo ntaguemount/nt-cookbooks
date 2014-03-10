@@ -93,6 +93,8 @@ end
 
 template "/WEBS/universalflower/http.json" do
   mode 00644
+  owner "ubuntu"
+  group "ubuntu"
   source "http.erb"
 
 end
