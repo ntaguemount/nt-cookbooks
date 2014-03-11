@@ -26,6 +26,7 @@ bash "install_Cache_Memcached_Fast" do
   EOH
 end
 
+#  perl Makefile.PL PP=1
 
 bash "install_Geo_IP" do
   user "root"
@@ -34,7 +35,7 @@ bash "install_Geo_IP" do
   wget http://search.cpan.org/CPAN/authors/id/B/BO/BORISZ/Geo-IP-1.43.tar.gz
   tar -zxf Geo-IP-1.43.tar.gz
   cd Geo-IP-1.43
-  perl Makefile.PL PP=1
+  perl Makefile.PL 
   make
   make test
   make install
