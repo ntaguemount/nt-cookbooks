@@ -34,7 +34,7 @@ bash "install_Geo_IP" do
   wget http://search.cpan.org/CPAN/authors/id/B/BO/BORISZ/Geo-IP-1.43.tar.gz
   tar -zxf Geo-IP-1.43.tar.gz
   cd Geo-IP-1.43
-  perl Makefile.PL
+  perl Makefile.PL PP=1
   make
   make test
   make install
