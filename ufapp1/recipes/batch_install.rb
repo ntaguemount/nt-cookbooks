@@ -11,3 +11,18 @@ bash "install_Template_HTML" do
   make install
   EOH
 end
+
+bash "install_Cache_Memcached_Fast" do
+  user "root"
+  cwd "/tmp"
+  code <<-EOH
+  wget http://search.cpan.org/CPAN/authors/id/K/KR/KROKI/Cache-Memcached-Fast-0.21.tar.gz
+  tar -zxf Cache-Memcached-Fast-0.21.tar.gz
+  cd Cache-Memcached-Fast-0.21
+  perl Makefile.PL
+  make
+  make test
+  make install
+  EOH
+end
+
