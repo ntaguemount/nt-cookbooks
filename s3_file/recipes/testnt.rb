@@ -1,5 +1,5 @@
-s3_file "/WEBS/universalflower/bg_iphone.png" do
-	remote_path "/video/bg_iphone.png"
+s3_file "/WEBS/universalflower/opsworks-cookbooks-master-chef-11.4.zip" do
+	remote_path "/video/opsworks-cookbooks-master-chef-11.4.zip"
 	bucket "ufvideo"
 #	aws_access_key_id "mykeyid"
 #	aws_secret_access_key "mykey"
